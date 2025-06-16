@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="8style.css" />
+    <title>Топ продаваемых товаров</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo" id="logo">CALIFORNIA</div>
+      <nav>
+        <a href="/index.html">Home</a>
+      </nav>
+    </header>
+
+    <h1>Топ продаваемых товаров!</h1>
+
+    <div class="controls">
+      <input
+        type="number"
+        id="imageCountInput"
+        min="1"
+        max="6"
+        placeholder="Сколько картинок?"
+      />
+      <input
+        type="number"
+        id="delayInput"
+        min="500"
+        placeholder="Задержка (мс)"
+      />
+
+      <button class="keyButton" id="startBtn">
+        <span class="button-text">Старт/Продолжить</span>
+      </button>
+
+      <button class="keyButton" id="stopBtn">
+        <span class="button-text">Стоп</span>
+      </button>
+    </div>
+    <div class="slider-container">
+      <div class="wrapper">
+        <div id="slider">
+          <img id="sliderImage" src="" alt="Слайдер" />
+        </div>
+        <span id="productName"></span>
+        <span id="productPrice"></span>
+      </div>
+
+      <div id="discountProduct">
+        <h3>Акция!</h3>
+        <img id="discountImage" src="" alt="Скидочный товар" />
+        <p id="discountName"></p>
+        <p>
+          <span id="oldPrice" class="old-price"></span>
+          <span id="newPrice" class="new-price"></span>
+        </p>
+        <p>До конца акции: <span id="discountTimer">15</span> сек</p>
+      </div>
+    </div>
+
+    <div id="endMessage">
+      <h2>Показ завершён!</h2>
+    </div>
+
+    <footer>
+      <div class="info">
+        <div id="textlogo">
+          <div class="header__logo">
+            <a href="/index.html" class="header__logo-link">
+              <img class="logo" src="/resources/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <p>
+            Sign up for texts to be notified about our best offers on the
+            perfect gifts.
+          </p>
+        </div>
+        <div class="otherInfo">
+          <div class="otherInfoText">
+            <p class="titleInfo">All products</p>
+            <ol>
+              <li>Phones</li>
+              <li>Watch</li>
+              <li>Tablet</li>
+              <li>Laptops</li>
+            </ol>
+          </div>
+
+          <div class="otherInfoText">
+            <p class="titleInfo">Company</p>
+            <ol>
+              <li>About</li>
+              <li>Support</li>
+            </ol>
+          </div>
+
+          <div class="otherInfoText">
+            <p class="titleInfo">Support</p>
+            <ol>
+              <li>Style Guide</li>
+              <li>Licensing</li>
+              <li>Change Log</li>
+              <li>Contact</li>
+            </ol>
+          </div>
+
+          <div class="otherInfoText">
+            <p class="titleInfo">Follow Us</p>
+            <ol>
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>LinkedIn</li>
+              <li>YouTube</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="8script.js"></script>
+  </body>
+</html>

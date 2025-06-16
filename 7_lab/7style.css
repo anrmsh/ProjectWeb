@@ -1,0 +1,106 @@
+body {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #102746;
+}
+
+header {
+  width: 1140px;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: 50px;
+  align-items: center;
+}
+header .logo {
+  font-weight: bold;
+}
+header nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 9999;
+  position: relative;
+  z-index: 10000;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+img {
+  width: 80px;
+  height: 80px;
+}
+.flip-card {
+  width: 100px;
+  height: 100px;
+  perspective: 600px;
+  margin: auto;
+}
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.front {
+  background-color: #fff;
+}
+.back {
+  background-color: #dce5e2;
+  transform: rotateY(180deg);
+  font-weight: bold;
+}
+
+.price-display {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.filter-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#priceFilter {
+  font-size: 17px;
+  padding: 17px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}

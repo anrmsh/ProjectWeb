@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма обратной связи</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="9style.css">
+
+</head>
+<body>
+    <header>
+    <div class="logo" id="logo">CALIFORNIA</div>
+    <nav>
+        <a href="http://127.0.0.1:5501/index.html">Home</a>
+    </nav>
+</header>
+  <h1>Оставьте отзыв о нашем магазине техники</h1>
+  <form action="/submit" method="POST">
+    <label>Имя: <input type="text" name="name" required></label><br><br>
+    <label>Email: <input type="email" name="email" required></label><br><br>
+    <label>Ваш отзыв:<br>
+      <textarea name="message" rows="5" cols="30" required></textarea>
+    </label><br><br>
+    <!-- <button type="submit">Отправить</button> -->
+    <button type="submit" class="keyButton" id="startBtn">
+        <span class="button-text">Отправить</span>
+      </button>
+  </form>
+  <br>
+  <a href="/messages" class = "butHref">Посмотреть отзывы</a> 
+</body>
+</html>

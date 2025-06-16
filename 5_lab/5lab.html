@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Управление iPhone</title>
+    <link rel="stylesheet" href="5style.css" />
+  </head>
+  <body>
+    <h1>Управление моделями iPhone</h1>
+    <div class="wrapper__form">
+      <form id="form">
+        <label
+          >Модель:
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Введите название модели"
+          />
+        </label>
+        <br />
+        <label
+          >ФИО менеджера:
+          <input
+            type="text"
+            id="manager"
+            required
+            placeholder="Введите фамилию"
+          />
+        </label>
+        <br />
+        <label
+          >Телефон:
+          <input
+            id="phone"
+            type="text"
+            id="phone"
+            required
+            value="+375"
+            placeholder="Введите телефон"
+          />
+          <span id="error-message" class="error" style="display: none">
+            Некорректный ввод. Пожалуйста, введите только цифры после знака '+'.
+          </span>
+        </label>
+        <br />
+        <label
+          >Количество проданных единиц:
+          <input
+            type="number"
+            id="employeeCount"
+            required
+            placeholder="Введите количество"
+          /> </label
+        ><br />
+        <label>
+          Общая сумма BYN:
+          <input
+            type="text"
+            id="totalSum"
+            required
+            placeholder="Введите сумму продажи"
+          />
+        </label>
+        <br />
+        <button type="submit" id="add-btn">Добавить модель</button>
+
+
+        <button type="button" id="clear-btn">Очистить форму</button>
+        <button type="button" id="clear-table-btn">Очистить всю таблицу</button>
+      </form>
+      <img class="phoneImg" src="/resources/phone.svg" alt="phone" />
+    </div>
+
+    <h2>Удалить модель</h2>
+    <label
+      >ID:
+      <select id="id-select"></select
+    ></label>
+    <button id="delete-btn">Удалить модель</button>
+
+    <h2>Добавить новое свойство</h2>
+    <label
+      >ID Модели:
+      <select id="property-id-select"></select
+    ></label>
+    <label
+      >Свойство:
+      <select id="property-select">
+        <option value="цвет">Цвет</option>
+        <option value="объем памяти">Объем памяти</option>
+        <option value="гарантия">Гарантия</option>
+      </select>
+    </label>
+    <label>Значение: <input type="text" id="property-value" /></label>
+    <button type="button" id="add-property-btn">Добавить свойство</button>
+    <button type="button" id="remove-property-btn">Убрать свойство</button>
+
+    <h2 style="text-align: center">Модели iPhone</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Модель</th>
+          <th>ФИО менеджера</th>
+          <th>Телефон</th>
+          <th>Количество проданных единиц</th>
+          <th>Общая сумма BYN</th>
+          <th>Доп. свойства</th>
+        </tr>
+      </thead>
+      <tbody id="department-table-body"></tbody>
+    </table>
+
+    <button id="show-managers-btn">
+      Показать менеджеров с макс/мин продажами
+    </button>
+    <div id="manager-info" style="margin-top: 20px"></div>
+    <button id="back-btn" style="margin-top: 20px">Назад</button>
+    <script src="/5_lab/5script.js"></script>
+  </body>
+</html>

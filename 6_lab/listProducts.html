@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/6_lab/listProducts.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/index.html" class="header__logo-link">
+              <img class="logo" src="/resources/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="sliderPage/slider.html" class="header__link"
+                  >ALL PRODUCTS</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">SOLUTIONS</a>
+                <img
+                  src="/resources/selector.svg"
+                  alt="выбор"
+                  id="dropdownToggle"
+                  style="cursor: pointer"
+                />
+                <div class="dropdown" id="dropdownMenu">
+                  <a href="/5_lab/5lab.html">Управление моделями</a>
+                  <a href="/6_lab/listProducts.html">Список товаров</a>
+                  <a href="/6_lab/listProducts.html">Пункт 3</a>
+                  <a href="#">Пункт 4</a>
+                  <a href="#">Пункт 5</a>
+                </div>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">ABOUT</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">SUPPORT</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="/" class="header__logo-link">
+            <img class="logo" src="/resources/search.svg" alt="Поиск" />
+          </a>
+          <a href="/" class="header__logo-link">
+            <img class="logo" src="/resources/cart.svg" alt="корзина" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="overlay" id="overlay"></div>
+    <div class="loader" id="loader"></div>
+    
+    <div id="tech-store">
+      <h2>Список товаров</h2>
+      <div class="wrapper-buttons">
+        <div class="image">
+          <img id = "photo"src="/sliderPage/images/iphoneSE.png" alt="iphone SE">
+        </div>
+       
+        <div id="category-block"></div>
+        <div id="controls">
+          <select id="category-select"></select>
+          <select id="position-select"></select>
+          <input type="text" id="model-input" placeholder="Название модели" />
+          <button id="addButton" onclick="addModel();validateInput()">Добавить модель</button>
+
+          <input
+            type="text"
+            id="title-input"
+            placeholder="Новое название категории"
+          />
+          <button id ="changeButton" onclick="changeTitle()">Изменить название категории</button>
+        </div>
+      </div>
+      
+      
+    </div>
+<div class="space"></div>
+    <footer>
+      <div class="info">
+        <div id="textlogo">
+          <div class="header__logo">
+            <a href="/index.html" class="header__logo-link">
+              <img class="logo" src="/resources/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <p>
+            Sign up for texts to be notified about our best offers on the
+            perfect gifts.
+          </p>
+        </div>
+        <div class="otherInfo">
+          <div class="otherInfoText">
+            <p class="titleInfo">All products</p>
+            <ol>
+              <li>Phones</li>
+              <li>Watch</li>
+              <li>Tablet</li>
+              <li>Laptops</li>
+            </ol>
+          </div>
+
+          <div class="otherInfoText">
+            <p class="titleInfo">Company</p>
+            <ol>
+              <li>About</li>
+              <li>Support</li>
+            </ol>
+          </div>
+
+          <div class="otherInfoText">
+            <p class="titleInfo">Support</p>
+            <ol>
+              <li>Style Guide</li>
+              <li>Licensing</li>
+              <li>Change Log</li>
+              <li>Contact</li>
+            </ol>
+          </div>
+
+          <div class="otherInfoText">
+            <p class="titleInfo">Follow Us</p>
+            <ol>
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>LinkedIn</li>
+              <li>YouTube</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="/6_lab/listProducts.js"></script>
+  </body>
+</html>

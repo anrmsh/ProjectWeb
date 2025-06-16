@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Readex+Pro:wght@160..700&display=swap");
+
+body {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #102746;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+body::before {
+  width: 500px;
+  height: 300px;
+  content: "";
+  background-image: linear-gradient(70deg, #e86550, rgb(44, 44, 249));
+  position: absolute;
+  z-index: -1;
+  border-radius: 20% 30% 80% 10%;
+  filter: blur(150px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -30%);
+  transition: 1s;
+}
+
+header {
+  width: 1140px;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: 50px;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bold;
+}
+header nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 9999;
+  position: relative;
+  z-index: 10000;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.butHref {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.butHref:hover {
+  background-color: #000000;
+  color: #f4f4f4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* закругление углов */
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #6666ff;
+  box-shadow: 0 0 5px rgba(102, 102, 255, 0.5);
+}
+
+.keyButton {
+  width: auto;
+  height: 42px;
+  border-radius: 200px;
+  border-width: 1px;
+  border: solid;
+  border: 1px solid #c5c5c5;
+  margin: 7px;
+}
+
+.button-text {
+  margin: 12px 22px 13px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 0%;
+}
+
+.keyButton {
+  position: relative;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.keyButton::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+
+  transition: top 0.4s ease;
+  z-index: 0;
+}
+
+.keyButton:hover::before {
+  top: 0;
+}
+
+.keyButton:hover {
+  color: #fff;
+}
+
+.button-text {
+  position: relative;
+  z-index: 1;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 150px auto;
+  width: 500px;
+}
+.modal h2 {
+  margin: 0 0 10px;
+}

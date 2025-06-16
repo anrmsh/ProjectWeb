@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i-store</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/" class="header__logo-link">
+              <img class="logo" src="/resources/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="sliderPage/slider.html" class="header__link"
+                  >ALL PRODUCTS</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">SOLUTIONS</a>
+                <img
+                  src="/resources/selector.svg"
+                  alt="выбор"
+                  id="dropdownToggle"
+                  style="cursor: pointer"
+                />
+                <div class="dropdown" id="dropdownMenu">
+                  <a href="/5_lab/5lab.html">Управление моделями</a>
+                  <a href="/6_lab/listProducts.html">Список товаров</a>
+                  <a href="/7_lab/7lab.html">Склад</a>
+                  <a href="/8_lab/8lab.html">Топ популярных товаров</a>
+                  <a href="http://localhost:3000">Написать отзыв</a>
+                </div>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">ABOUT</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">SUPPORT</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="/" class="header__logo-link">
+            <img class="logo" src="/resources/search.svg" alt="Поиск" />
+          </a>
+          <a href="/" class="header__logo-link">
+            <img class="logo" src="/resources/cart.svg" alt="корзина" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="carousel">
+      <div class="slider">
+        <button class="prev" aria-label="Previous">❮</button>
+        <ul class="slides">
+          <li><img src="/resources/ipad.svg" alt="Phone 1" /></li>
+          <li><img src="/resources/phone.svg" alt="Phone 2" /></li>
+          <li><img src="/resources/smartWatch1.svg" alt="Phone 3" /></li>
+          <li><img src="/resources/macbook.svg" alt="Phone 4" /></li>
+        </ul>
+        <button class="next" aria-label="Next">❯</button>
+      </div>
+    </div>
+    <div class="wrapper__categories fade-in" id="myDiv">
+      <div class="textCategories">
+        <p>Shop our latest offers and categories</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+          in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div class="imgCategories">
+        <div class="twoItem">
+          <div class="laptop">
+            <img class="laptopImg" src="/resources/laptop.svg" alt="laptop" />
+            <div class="imgLabel">
+              <p>Laptops</p>
+              <p>True Laptop Solution</p>
+            </div>
+          </div>
+
+          <div class="watch">
+            <img class="watchImg" src="/resources/watch.svg" alt="watch" />
+            <div class="imgLabel">
+              <p>Watch</p>
+              <p>Not just stylisht</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone">
+          <img class="phoneImg" src="/resources/phone.svg" alt="phone" />
+          <div class="imgLabel2">
+            <p>Phones</p>
+            <p>Your day to day life</p>
+          </div>
+        </div>
+        <div class="tablet">
+          <img class="tabletImg" src="/resources/tablet.svg" alt="tablet" />
+          <div class="imgLabel2">
+            <p>Tablet</p>
+            <p>Empower your work</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="itemsAround">
+      <div class="textCategories">
+        <p>Save on our most selled items.</p>
+        <p>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+      </div>
+      <div class="fourItem">
+        <div class="item">
+          <img src="/resources/macbook.svg" alt="phone" />
+          <div class="wrapper__description">
+            <p>MacBook Pro 13</p>
+            <p>
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+            </p>
+            <p>$ 1,200.00 USD</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/resources/smartWatch1.svg" alt="phone" />
+          <div class="wrapper__description">
+            <p>Smart Galaxy Watch 3</p>
+            <p>
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit...
+            </p>
+            <p>$ 199.00 USD</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/resources/macAir.svg" alt="phone" />
+          <div class="wrapper__description">
+            <p>MacBook Air M1</p>
+            <p>
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit...
+            </p>
+            <p>$ 1,009.00 USD</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/resources/ipad.svg" alt="phone" />
+          <div class="wrapper__description">
+            <p>iPad</p>
+            <p>
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit...
+            </p>
+            <p>$ 610.00 USD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mostsalledItems">
+      <div class="textCategories">
+        <p>See the best around here</p>
+        <p>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+      </div>
+      <div class="threesellItems">
+        <div class="sellItem">
+          <div class="textSell">
+            <p>Smart light bulb pack</p>
+            <p>Latest and gratest</p>
+          </div>
+          <img src="/resources/exploreBtn.svg" alt="phone" />
+          <img src="/resources/twoWatches.svg" alt="phone" />
+        </div>
+        <div class="sellItem">
+          <div class="textSell">
+            <p>Smart light bulb pack</p>
+            <p>Latest and gratest</p>
+          </div>
+          <img src="/resources/exploreBtn.svg" alt="phone" />
+          <img src="/resources/fourDevices.svg" alt="phone" />
+        </div>
+        <div class="sellItem">
+          <div class="textSell">
+            <p>Smart light bulb pack</p>
+            <p>Latest and gratest</p>
+          </div>
+          <img src="/resources/exploreBtn.svg" alt="phone" />
+          <img src="/resources/twoDevices.svg" alt="phone" />
+        </div>
+      </div>
+    </div>
+    <div class="ideas">
+      <div class="textCategories">
+        <p>Ideas have a place here</p>
+        <p>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+      </div>
+      <div class="ideaExpl">
+        <img src="/resources/bookpage.svg" alt="bookPage" />
+        <div class="textIdeas">
+          <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
+          <p>Road Design Handbook For The International Road...</p>
+          <p>The Best Kept Secrets About Creative People</p>
+          <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
+        </div>
+      </div>
+      <div class="wrapper__seeAll">
+        <p>See all</p>
+        <img src="/resources/strelka.svg" alt="bookPage" />
+      </div>
+    </div>
+    <div class="anyElse">
+      <div class="textCategories">
+        <p>Looking for anything else?</p>
+      </div>
+      <div class="search-container">
+        <form action="/search" method="GET">
+          <button type="submit" class="search-button">
+            <img
+              src="/resources/searchImg.svg"
+              alt="Поиск"
+              class="search-icon"
+            />
+          </button>
+          <input
+            class="searchInput"
+            type="text"
+            name="query"
+            placeholder="Search keyword"
+            required
+          />
+        </form>
+      </div>
+
+      <div class="wrapper__keyWords">
+        <div class="firstRowKeyword">
+          <button class="keyButton">
+            <span class="button-text">iPhone</span>
+          </button>
+          <button class="keyButton">
+            <span class="button-text">Charger</span>
+          </button>
+          <button class="keyButton">
+            <span class="button-text">Gift</span>
+          </button>
+          <button class="keyButton">
+            <span class="button-text">Google Pixel 3</span>
+          </button>
+          <button class="keyButton">
+            <span class="button-text">Keyboard</span>
+          </button>
+        </div>
+        <div class="secondRowKeyword">
+          <button class="keyButton">
+            <span class="button-text">13 Pro Max</span>
+          </button>
+          <button class="keyButton">
+            <span class="button-text">iPhone 12</span>
+          </button>
+          <button class="keyButton">
+            <span class="button-text">Laptop</span>
+          </button>
+          <button class="keyButton">
+            <span class="button-text">Mobile</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="wrapper__sighUp">
+        <div class="neverMissThing">
+          <div class="textCategories">
+            <p>Never miss a thing</p>
+            <p>
+              Sign up for texts to be notified about our best offers on the
+              perfect gifts.
+            </p>
+          </div>
+          <img
+            id="allModels"
+            src="/resources/notmissThing.svg"
+            alt="All models"
+          />
+
+          <div class="signUpForm-container">
+            <input type="email" placeholder="Your email" class="email-input" />
+            <button class="signup-button">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="info">
+        <div id="textlogo">
+          <div class="header__logo">
+            <a href="/index.html" class="header__logo-link">
+              <img class="logo" src="/resources/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <p>
+            Sign up for texts to be notified about our best offers on the
+            perfect gifts.
+          </p>
+        </div>
+        <div class="otherInfo">
+          <div class="otherInfoText">
+            <p class="titleInfo">All products</p>
+            <ol>
+              <li>Phones</li>
+              <li>Watch</li>
+              <li>Tablet</li>
+              <li>Laptops</li>
+            </ol>
+          </div>
+
+          <div class="otherInfoText">
+            <p class="titleInfo">Company</p>
+            <ol>
+              <li>About</li>
+              <li>Support</li>
+            </ol>
+          </div>
+
+          <div class="otherInfoText">
+            <p class="titleInfo">Support</p>
+            <ol>
+              <li>Style Guide</li>
+              <li>Licensing</li>
+              <li>Change Log</li>
+              <li>Contact</li>
+            </ol>
+          </div>
+
+          <div class="otherInfoText">
+            <p class="titleInfo">Follow Us</p>
+            <ol>
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>LinkedIn</li>
+              <li>YouTube</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

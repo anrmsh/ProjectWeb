@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Таблица товаров</title>
+    <link rel="stylesheet" href="7style.css" />
+    <link rel="stylesheet" href="/css/style.css">
+   
+  </head>
+  <body>
+    <header>
+      <div class="logo" id="logo">CALIFORNIA</div>
+      <nav>
+          <a href="/index.html">Home</a>
+      </nav>
+  </header>
+      
+
+    <div class="filter-container">
+      <select id="priceFilter">
+        <option value="min">Минимальная цена</option>
+        <option value="max">Максимальная цена</option>
+        <option value="avg">Средняя цена</option>
+      </select>
+
+      <button class="keyButton" onclick="applyPriceFilter()">
+        <span class="button-text">Применить фильтр</span>
+        </button>
+    </div>
+
+    <div id="price" class="price-display"></div>
+
+    <div class="table-container">
+      <table id="productTable"></table>
+    </div>
+
+    <footer>
+        <div class="info">
+          <div id="textlogo">
+            <div class="header__logo">
+              <a href="/index.html" class="header__logo-link">
+                <img class="logo" src="/resources/logo.svg" alt="logo" />
+              </a>
+            </div>
+  
+            <p>
+              Sign up for texts to be notified about our best offers on the
+              perfect gifts.
+            </p>
+          </div>
+          <div class="otherInfo">
+            <div class="otherInfoText">
+              <p class="titleInfo">All products</p>
+              <ol>
+                <li>Phones</li>
+                <li>Watch</li>
+                <li>Tablet</li>
+                <li>Laptops</li>
+              </ol>
+            </div>
+  
+            <div class="otherInfoText">
+              <p class="titleInfo">Company</p>
+              <ol>
+                <li>About</li>
+                <li>Support</li>
+              </ol>
+            </div>
+  
+            <div class="otherInfoText">
+              <p class="titleInfo">Support</p>
+              <ol>
+                <li>Style Guide</li>
+                <li>Licensing</li>
+                <li>Change Log</li>
+                <li>Contact</li>
+              </ol>
+            </div>
+  
+            <div class="otherInfoText">
+              <p class="titleInfo">Follow Us</p>
+              <ol>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>LinkedIn</li>
+                <li>YouTube</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="7script.js"></script>
+  </body>
+</html>
